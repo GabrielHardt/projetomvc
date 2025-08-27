@@ -4684,11 +4684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabri\\OneDrive\\Desktop\\Projetos\\projetomvc\\projetomvc.csproj",
+      "projectUniqueName": "C:\\Users\\Gabri\\Desktop\\projeto\\projetomvc\\projetomvc.csproj",
       "projectName": "projetomvc",
-      "projectPath": "C:\\Users\\Gabri\\OneDrive\\Desktop\\Projetos\\projetomvc\\projetomvc.csproj",
+      "projectPath": "C:\\Users\\Gabri\\Desktop\\projeto\\projetomvc\\projetomvc.csproj",
       "packagesPath": "C:\\Users\\Gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabri\\OneDrive\\Desktop\\Projetos\\projetomvc\\obj\\",
+      "outputPath": "C:\\Users\\Gabri\\Desktop\\projeto\\projetomvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4715,7 +4715,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -4751,7 +4751,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

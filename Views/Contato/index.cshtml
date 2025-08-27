@@ -1,0 +1,56 @@
+@model IEnumerable<projetomvc.Models.Contato> // Direciona o dado que vem do controller a uma instancia de contato
+<!--nossa lista de contatos esta sendo carregada aqui, por isso o enumerable -->
+
+@{
+    ViewData["Title"] = "Listagem de contatos";
+}
+
+<h2>Contatos</h2>
+
+<p>
+    <a asp-action="Criar">Novo Contato</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id) <!--aqui usamos a instancia de contato -->
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ativo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model) // pra cada item que vc receber da model, repita este codigo.
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Telefone)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Ativo)
+                </td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a> |
+                    <a asp-action="Deletar" asp-route-id="@item.Id">Deletar</a> 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
